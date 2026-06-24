@@ -41,7 +41,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 2rem auto;
   padding: 0 2rem;
 }
@@ -62,7 +62,6 @@ h1 {
 h2 {
   color: #007acc;
   margin-bottom: 1rem;
-  font-size: 1.2rem;
 }
 
 .btn {
@@ -79,17 +78,13 @@ h2 {
   background: #005a99;
 }
 
-.btn:disabled {
-  background: #ccc;
-  cursor: not-allowed;
-}
-
 .input {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .form-group {
@@ -102,47 +97,84 @@ h2 {
   font-weight: bold;
 }
 
-.auth-form {
-  max-width: 400px;
-  margin: 2rem auto;
-}
-
-.auth-form h2 {
+.home-hero {
   text-align: center;
-  margin-bottom: 2rem;
+  padding: 4rem 2rem;
 }
 
-.home {
-  text-align: center;
-  padding: 2rem 0;
+.home-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.subtitle {
+.home-hero p {
+  font-size: 1.2rem;
   color: #666;
   margin-bottom: 2rem;
 }
 
-.features {
+.feature-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .feature-card {
   background: white;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 8px;
+  text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .feature-card h3 {
   color: #007acc;
   margin-bottom: 0.5rem;
-  font-size: 1rem;
 }
 
-textarea.input {
-  resize: vertical;
-  min-height: 80px;
+.upload-area {
+  border: 2px dashed #007acc;
+  border-radius: 8px;
+  padding: 3rem;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.upload-area:hover {
+  background: #f0f8ff;
+}
+
+.meal-result {
+  background: #f0f8ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.meal-result h3 {
+  color: #007acc;
+  margin-bottom: 1rem;
+}
+
+.meal-result ul {
+  list-style: none;
+}
+
+.meal-result li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.shopping-list {
+  background: #fff8f0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.shopping-list h3 {
+  color: #ff8c00;
+  margin-bottom: 1rem;
 }

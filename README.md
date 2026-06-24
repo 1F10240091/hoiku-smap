@@ -38,33 +38,41 @@ cd backend
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-uvicorn main:app --reload
 ```
 
 ### 3. フロントエンドをセットアップ
 
 ```bash
-cd frontend
 npm install
+```
+
+### 4. 開発サーバーを起動
+
+```bash
 npm run dev
 ```
+
+これでフロントエンド（localhost:5173）とバックエンド（localhost:8000）が同時に起動します。
 
 ### 4. ブラウザで開く
 
 http://localhost:5173
 
-## NPM Scripts（フロントエンド）
+## NPM Scripts
 
 | コマンド | 内容 |
 |---------|------|
-| `npm run dev` | 開発用サーバーを起動 |
-| `npm run build` | プロダクションビルドを生成 |
-| `npm run preview` | ビルド結果をプレビュー |
+| `npm run dev` | フロントエンド・バックエンド同時起動 |
+| `npm run dev:frontend` | フロントエンドのみ起動 |
+| `npm run dev:backend` | バックエンドのみ起動 |
+| `npm run build` | フロントエンドのプロダクションビルド |
+| `npm run lint` | ESLint実行 |
 
 ## プロジェクト構成
 
 ```
 hoiku-smap/
+├── package.json          # モノレポ設定（npm workspaces）
 ├── docs/
 │   ├── design.md         # 詳細設計書
 │   ├── assignment.md     # タスク割当表

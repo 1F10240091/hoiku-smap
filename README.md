@@ -31,22 +31,15 @@ git clone https://github.com/your-org/hoiku-smap.git
 cd hoiku-smap
 ```
 
-### 2. バックエンドをセットアップ
+### 2. セットアップ
 
 ```bash
-cd backend
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
+npm run setup
 ```
 
-### 3. フロントエンドをセットアップ
+これでフロントエンド（npm install）とバックエンド（Python venv + pip install）が同時にセットアップされます。
 
-```bash
-npm install
-```
-
-### 4. 開発サーバーを起動
+### 3. 開発サーバーを起動
 
 ```bash
 npm run dev
@@ -62,6 +55,7 @@ http://localhost:5173
 
 | コマンド | 内容 |
 |---------|------|
+| `npm run setup` | フロントエンド・バックエンド同時セットアップ |
 | `npm run dev` | フロントエンド・バックエンド同時起動 |
 | `npm run dev:frontend` | フロントエンドのみ起動 |
 | `npm run dev:backend` | バックエンドのみ起動 |
